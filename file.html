@@ -4,6 +4,24 @@
 <title>
 </title>
 </head>
-<body>
+<body align="center">
+  <h1>  A Simple Calculator</h1>
+</br>
+</br>
+</br>
+    <textarea id="mytextarea" rows="5" cols="20">
+    </textarea>
+    <button onclick="mytext('mytextarea','1')">1</button>
+    <button onclick="mytext('mytextarea','2')">2</button>
+    <button onclick="mytext('mytextarea','3')">3</button>
+    <button onclick="mytext('mytextarea','4')">4</button>
+    <button onclick="mytext('mytextarea','5')">5</button>
+  <script>
+  function mytext(text,t)
+  {
+    var c=document.getElementById(text);
+    c.innerHTML+=t;
+  }
+  </script>
 </body>
 </html>
