@@ -51,26 +51,38 @@
     var c=document.getElementById(text).focus();
 	var cc=document.getElementById(text);
     cc.innerHTML+=t;
+	var res,ress;
+	if(Number(t)>=0 && Number(t)<=9)
+		res=t;
+	else
+	{
+	switch(t)
+	{
+	case "+": ress=res;
+			  res=res+ress;	
+		break;
+	case "-": ress=res;
+				res=ress-res;
+		break;
+	case "*":	ress=res;
+				res=res*ress;
+		break;
+	case "/":	ress=res;
+				res=ress/res;
+		break;
+	case "=": var cx=document.getElementById(text);
+				cx.innerHTML=res;
+		break;
+	default :
+		text ="ND";
+	}
+	}
   }
   function resetbtn(text){
 	var c = document.getElementById(text);
 	c.innerHTML="";
   }
- var res=0;
- var operator="NULL";
- switch()
- {
-	case "+":
-		break;
-	case "-":
-		break;
-	case "*":
-		break;
-	case "/":
-		break;
-	default :
-		text ="ND";
- }
+	
   </script>
 </body>
 </html>
