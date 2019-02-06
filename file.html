@@ -3,7 +3,7 @@
 <head>
   <style>
     .button,input[type="button"]{
-      font-size:30px;
+    font-size:38px;
 	  color:white;
 	  background-color:#4CAF50;
 	  padding:10px 24px;
@@ -12,7 +12,7 @@
 	#mytextarea {
 		color:white;
 		background-color:black;
-		border:5px solid;
+		border:3px solid;
 		border-color:slateblue;
 	}
 	button,input[type="button"]:hover {
@@ -25,7 +25,7 @@
 </br>
 </br>
 </br>
-    <textarea id="mytextarea" rows="4" cols="30">
+    <textarea id="mytextarea" rows="3" cols="30" style="font-size:18px;">
     </textarea>
 	<input type="button" onclick="resetbtn('mytextarea')" value="C">
     <br/>
@@ -42,12 +42,9 @@
     <button class="button" onclick="mytext('mytextarea','3')">3</button>
     <button class="button" onclick="mytext('mytextarea','-')">-</button><br/>
     <button class="button" onclick="mytext('mytextarea','0')">0</button>
-    <button class="button" onclick="mytext('mytextarea','.')">.</button>
     <button class="button" onclick="mytext('mytextarea','=')">=</button>
     <button class="button" onclick="mytext('mytextarea','+')">+</button>
-
-
-
+    <button class="button" onclick="mytext('mytextarea','.')">.</button>
   <script>
   function mytext(text,t)
   {
